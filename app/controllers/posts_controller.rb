@@ -19,6 +19,6 @@ def show
       params.require(:post).permit(:title, :text)
     end
 =end
-  
+        #ff
 end
 
