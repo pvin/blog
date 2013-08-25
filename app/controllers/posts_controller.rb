@@ -9,8 +9,12 @@ class PostsController < ApplicationController
     redirect_to @post #action: :show, id: @post.id
   end
 
-def show
+  def show
     @post = Post.find(params[:id])
+  end
+
+  def index
+    @posts = Post.all
   end
 
 =begin
@@ -19,6 +23,6 @@ def show
       params.require(:post).permit(:title, :text)
     end
 =end
-        #ff
+  #ff
 end
 
